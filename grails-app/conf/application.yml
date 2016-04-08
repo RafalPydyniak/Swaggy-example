@@ -120,3 +120,7 @@ grails:
 endpoints:
     jmx:
         unique-names: true
+
+swaggydoc:
+    contact: rafal@pydyniak.pl
+    description: sample swaggy app
