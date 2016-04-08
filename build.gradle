@@ -5,6 +5,7 @@ buildscript {
     repositories {
         mavenLocal()
         maven { url "https://repo.grails.org/grails/core" }
+        maven { url 'http://dl.bintray.com/rahulsom/myjava' }
     }
     dependencies {
         classpath "org.grails:grails-gradle-plugin:$grailsVersion"
@@ -60,6 +61,9 @@ dependencies {
     testCompile "org.grails.plugins:geb"
     testRuntime "org.seleniumhq.selenium:selenium-htmlunit-driver:2.47.1"
     testRuntime "net.sourceforge.htmlunit:htmlunit:2.18"
+
+    //Swaggy doc
+    compile "org.grails.plugins:swaggydoc-grails3:0.26.0"
 }
 
 task wrapper(type: Wrapper) {
